@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Monitor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Machine Monitor</h1>
+      <p>工場内の機器情報を確認するための学習用ページです。</p>
+      <nav aria-label="ページ内メニュー">
+        <ul>
+          <li><a href="#overview">概要</a></li>
+          <li><a href="#status-summary">稼働状況</a></li>
+          <li><a href="#machine-list">機器一覧</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview">
+        <h2>概要</h2>
+        <p>
+          このページでは、登録されている機器の状態と簡単な説明を表示します。
+          現在はHTMLだけで作られているため、情報は自動更新されません。
+        </p>
+      </section>
+
+      <section id="status-summary">
+        <h2>稼働状況</h2>
+        <ul>
+          <li><strong>Machine-A:</strong> Online</li>
+          <li><strong>Machine-B:</strong> Offline</li>
+        </ul>
+      </section>
+
+      <section id="machine-list">
+        <h2>機器一覧</h2>
+        <table>
+          <caption>登録機器の現在の情報</caption>
+          <thead>
+            <tr>
+              <th scope="col">機器名</th>
+              <th scope="col">状態</th>
+              <th scope="col">説明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Machine-A</th>
+              <td>Online</td>
+              <td>製品を組み立てる機器です。</td>
+            </tr>
+            <tr>
+              <th scope="row">Machine-B</th>
+              <td>Offline</td>
+              <td>完成品を検査する機器です。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>操作の例</h2>
+        <p>次のボタンはHTML要素の表示例です。この段階では押しても処理は実行されません。</p>
+        <button type="button">状態を更新</button>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="#">ページの先頭へ戻る</a></p>
+      <p><small>HTML基礎学習用 Machine Monitor</small></p>
+    </footer>
+  </body>
+</html>
